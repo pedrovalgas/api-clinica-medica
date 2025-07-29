@@ -1,0 +1,59 @@
+# Ignorar diretórios de build e arquivos temporários
+target/
+build/
+
+# Exceções para builds dentro de src (em caso de módulos específicos)
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Arquivos do Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / Spring Tool Suite (STS)
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos de classe compilados
+*.class
+
+# JARs e WARs gerados
+*.jar
+*.war
+
+# Arquivos temporários de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis (que contenham senhas ou dados secretos)
+application.properties
+application-prod.properties
+application-prod.yml
+application-dev.properties
+application-dev.yml
+.env
